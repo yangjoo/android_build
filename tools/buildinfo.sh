@@ -24,10 +24,10 @@ if [ -n "$TARGET_CPU_ABI2" ] ; then
 fi
 echo "ro.product.manufacturer=$PRODUCT_MANUFACTURER"
 if [ -n "$PRODUCT_DEFAULT_LANGUAGE" ] ; then
-  echo "ro.product.locale.language=$PRODUCT_DEFAULT_LANGUAGE"
+  echo "ro.product.locale.language=ko"
 fi
 if [ -n "$PRODUCT_DEFAULT_REGION" ] ; then
-  echo "ro.product.locale.region=$PRODUCT_DEFAULT_REGION"
+  echo "ro.product.locale.region=KR"
 fi
 echo "ro.wifi.channels=$PRODUCT_DEFAULT_WIFI_CHANNELS"
 echo "ro.board.platform=$TARGET_BOARD_PLATFORM"
@@ -35,7 +35,7 @@ echo "ro.board.platform=$TARGET_BOARD_PLATFORM"
 echo "# ro.build.product is obsolete; use ro.product.device"
 echo "ro.build.product=$TARGET_DEVICE"
 if [ "$TARGET_UNIFIED_DEVICE" == "" ] ; then
-  echo "ro.product.model=$PRODUCT_MODEL"
+  echo "ro.product.model=SHV-E210K"
   echo "ro.product.device=$TARGET_DEVICE"
   echo "# Do not try to parse ro.build.description or .fingerprint"
   echo "ro.build.description=$PRIVATE_BUILD_DESC"
